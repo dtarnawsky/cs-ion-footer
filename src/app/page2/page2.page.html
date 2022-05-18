@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>page2</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+
+
+</ion-content>
+<ion-footer>
+  <div class="comment-section ion-align-items-center">
+    <ion-textarea #comment autoGrow="true" autocapitalize="on" minlength="1" maxlength="129" name="comment"
+      placeholder="Post your comment here" rows="1" spellcheck="true">
+    </ion-textarea>
+    <ion-button [disabled]="!comment.value" fill="clear">
+      <ion-icon name="arrow-up-circle" size="large" slot="icon-only"></ion-icon>
+    </ion-button>
+    <!-- <ion-spinner *ngIf="postingComment" name="lines"></ion-spinner> -->
+  </div>
+</ion-footer>
